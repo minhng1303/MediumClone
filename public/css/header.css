@@ -1,0 +1,96 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.header {
+  width: 100% !important;
+  padding: 1rem 0;
+}
+.header .items {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.header .items img {
+  height: 4rem;
+}
+.header .items .right-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  font-size: 1.2rem;
+  color: #008480;
+}
+.header .items .right-items .signin {
+  margin-right: 3rem;
+}
+.header .items .right-items .signin a {
+  text-decoration: none;
+  color: #008480;
+}
+.header .items .right-items .get-started {
+  border: 1px solid #008480;
+  padding: 0.5rem 1.5rem;
+  border-radius: 40px;
+}
+
+.nav {
+  width: 100%;
+}
+.nav__content {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: start;
+}
+.nav__content__img img {
+  width: 46px;
+  height: 36px;
+}
+.nav__content__items {
+  margin-left: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.nav__content__items__link {
+  display: inline-block;
+  margin: 0 1.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #525252;
+  font-size: 1.2rem;
+}
+.nav__content__items__link:last-child {
+  margin: 1rem 0 1rem 1rem;
+}
+
+@media only screen and (max-width: 75rem) {
+  .nav__content__items__link {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=header.css.map */
