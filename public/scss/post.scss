@@ -1,0 +1,148 @@
+@import "base";
+@import "utilities";
+
+.main-content {
+  position: relative;
+  .post-wrapper {
+    // position: absolute;
+    margin: 0 auto;
+    .post-header {
+      font-size: 12px;
+      // font-family: Helvetica, Arial, sans-serif;
+
+      i {
+        font-size: 18px;
+        margin-inline: 2px;
+      }
+    }
+
+    &__paragraph {
+      font-size: 20px;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-weight: 400;
+      color: #292929;
+    }
+
+    .post-tag-list {
+      .bg-grey {
+        background-color: #e0dcdc;
+        font-size: 13px;
+      }
+    }
+
+    .icons {
+      i {
+        font-size: 18px;
+        margin-inline: 2px;
+      }
+    }
+  }
+  .intro {
+    font-size: 1.3rem;
+    padding: 1.2rem;
+    border: 1px solid #eee;
+    background-color: #eee;
+    margin: 2rem 0;
+    display: inline-block;
+    a {
+      color: #000;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
+
+.side-noti {
+  position: -webkit-sticky;
+  position: sticky;
+  // position: fixed;
+  font-size: 13px;
+  font-weight: 400;
+  top: 0;
+  padding: 5rem;
+}
+
+.recommended-section {
+  .recommended-post {
+    font-size: 14px;
+
+    .post-title {
+      font-weight: 500;
+      font-family: Helvetica, sans-serif;
+      color: #292929;
+    }
+
+    .post-link {
+      font-size: 12px;
+    }
+
+    img {
+      height: 70px;
+      width: 70px;
+    }
+  }
+}
+
+.bg-custom {
+  background: darkcyan;
+}
+.main-post {
+  width: 80% !important;
+  margin: auto !important;
+}
+
+.side-noti {
+  width: 30%;
+  font-size: 1.2rem;
+  h2 {
+    font-weight: 550;
+  }
+  .follow-link {
+    padding: 1rem 2rem;
+  }
+}
+
+.post-header {
+  img {
+    border: 1px solid $text-color-link;
+  }
+  .follow-link {
+    padding: 0.5rem 1rem;
+  }
+  .fa-star {
+    font-size: 1rem !important;
+  }
+  .name {
+    font-size: 1.5rem;
+  }
+  .time {
+    font-size: 1.2rem;
+    color: $text-gray-color;
+    font-weight: 500;
+  }
+}
+
+.photo-by {
+  color: $text-gray-color;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.post-like {
+  font-size: 1.5rem;
+}
+.follow {
+  font-size: 1.2rem;
+}
+
+// .follow-container {
+//   .follow-link{
+//     font-size: 1rem;
+//     padding: 0.8rem 1.8rem !important;
+//   }
+// }
+
+.recommended-section {
+  h3 {
+    font-weight: 600;
+  }
+}

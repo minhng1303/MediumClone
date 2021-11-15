@@ -1,0 +1,142 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.main-content {
+  position: relative;
+}
+.main-content .post-wrapper {
+  margin: 0 auto;
+}
+.main-content .post-wrapper .post-header {
+  font-size: 12px;
+}
+.main-content .post-wrapper .post-header i {
+  font-size: 18px;
+  margin-inline: 2px;
+}
+.main-content .post-wrapper__paragraph {
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  color: #292929;
+}
+.main-content .post-wrapper .post-tag-list .bg-grey {
+  background-color: #e0dcdc;
+  font-size: 13px;
+}
+.main-content .post-wrapper .icons i {
+  font-size: 18px;
+  margin-inline: 2px;
+}
+.main-content .intro {
+  font-size: 1.3rem;
+  padding: 1.2rem;
+  border: 1px solid #eee;
+  background-color: #eee;
+  margin: 2rem 0;
+  display: inline-block;
+}
+.main-content .intro a {
+  color: #000;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.side-noti {
+  position: -webkit-sticky;
+  position: sticky;
+  font-size: 13px;
+  font-weight: 400;
+  top: 0;
+  padding: 5rem;
+}
+
+.recommended-section .recommended-post {
+  font-size: 14px;
+}
+.recommended-section .recommended-post .post-title {
+  font-weight: 500;
+  font-family: Helvetica, sans-serif;
+  color: #292929;
+}
+.recommended-section .recommended-post .post-link {
+  font-size: 12px;
+}
+.recommended-section .recommended-post img {
+  height: 70px;
+  width: 70px;
+}
+
+.bg-custom {
+  background: darkcyan;
+}
+
+.main-post {
+  width: 80% !important;
+  margin: auto !important;
+}
+
+.side-noti {
+  width: 30%;
+  font-size: 1.2rem;
+}
+.side-noti h2 {
+  font-weight: 550;
+}
+.side-noti .follow-link {
+  padding: 1rem 2rem;
+}
+
+.post-header img {
+  border: 1px solid #008480 !important;
+}
+.post-header .follow-link {
+  padding: 0.5rem 1rem;
+}
+.post-header .fa-star {
+  font-size: 1rem !important;
+}
+.post-header .name {
+  font-size: 1.5rem;
+}
+.post-header .time {
+  font-size: 1.2rem;
+  color: #525252;
+  font-weight: 500;
+}
+
+.photo-by {
+  color: #525252;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.post-like {
+  font-size: 1.5rem;
+}
+
+.follow {
+  font-size: 1.2rem;
+}
+
+.recommended-section h3 {
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=post.css.map */

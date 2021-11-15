@@ -17,20 +17,14 @@ body {
   line-height: 1.6;
 }
 
-.main {
-  position: relative;
-}
-
 .footer {
-  position: absolute;
-  bottom: 0 !important;
   margin-top: 2rem;
   background-color: #191919;
   color: #fff;
 }
 .footer__container {
   width: 80%;
-  padding: 5rem 0;
+  padding: 3rem 0;
   margin: 0 auto;
   font-size: 1.2rem;
 }
@@ -39,7 +33,6 @@ body {
   grid-template-columns: repeat(3, 1fr);
   align-items: flex-start;
   justify-content: space-between;
-  margin-bottom: 5rem;
 }
 .footer__container__message {
   margin-right: 1.5rem;
@@ -47,7 +40,7 @@ body {
 .footer__container__message__title a {
   text-decoration: none;
   color: rgba(255, 255, 255, 0.98);
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 800;
 }
 .footer__container__message__details {
@@ -59,7 +52,7 @@ body {
   font-size: 1.5rem;
 }
 .footer__container__message__link:hover {
-  pointer: cursor;
+  cursor: pointer;
 }
 .footer__container__message:last-child {
   margin-right: 0 !important;
@@ -70,7 +63,7 @@ body {
   align-items: center;
   justify-content: flex-start;
   align-items: center;
-  margin: 3rem 0 5rem 0;
+  margin: 3rem 0 1rem 0;
 }
 .footer__container__bottom__img img {
   height: 25px;
@@ -91,6 +84,9 @@ body {
 }
 .footer__container__bottom__items__link:hover {
   text-decoration: underline;
+}
+.footer__container .hr {
+  border-color: #fff !important;
 }
 
 /*# sourceMappingURL=footer.css.map */

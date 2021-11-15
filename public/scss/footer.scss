@@ -1,26 +1,26 @@
 @import "base";
 @import "utilities";
 
-.main{
-  position: relative;
-}
+// .main{
+//   position: relative;
+// }
 
 .footer {
-  position: absolute;
-  bottom: 0 !important;
+  // position: absolute;
+  // bottom: 0 !important;
   margin-top: 2rem;
   background-color: rgb(25, 25, 25);
   color: #fff;
 
   &__container {
     width: 80%;
-    padding: 5rem 0;
-   
+    padding: 3rem 0;
+
     // justify-content: space-around;
 
     margin: 0 auto;
     font-size: 1.2rem;
-    &__text{
+    &__text {
       // @include displayFlexCenter();
       // align-items: flex-start;
       // justify-content: flex-start;
@@ -28,16 +28,15 @@
       grid-template-columns: repeat(3, 1fr);
       align-items: flex-start;
       justify-content: space-between;
-      margin-bottom: 5rem;
+      // margin-bottom: 2rem;
     }
     &__message {
-      
       margin-right: 1.5rem;
       &__title {
         a {
           text-decoration: none;
           color: rgba(255, 255, 255, 0.98);
-          font-size: 1.8rem;
+          font-size: 1.5rem;
           font-weight: 800;
         }
       }
@@ -50,7 +49,7 @@
         font-size: 1.5rem;
       }
       &__link:hover {
-        pointer: cursor;
+        cursor: pointer;
       }
     }
     &__message:last-child {
@@ -61,30 +60,31 @@
       @include displayFlexCenter();
       justify-content: flex-start;
       align-items: center;
-      margin: 3rem 0 5rem 0;
+      margin: 3rem 0 1rem 0;
       &__img img {
         height: 25px;
       }
-      &__items{
+      &__items {
         margin-left: auto;
         display: flex;
         align-items: center;
         justify-content: space-around;
- 
 
-        &__link{
+        &__link {
           margin-right: 1rem;
           font-size: 1.5rem;
-        color: rgba(255, 255, 255, 0.7);
-
+          color: rgba(255, 255, 255, 0.7);
         }
-        &__link:last-child{
+        &__link:last-child {
           margin-right: 0;
         }
-        &__link:hover{
+        &__link:hover {
           text-decoration: underline;
         }
       }
+    }
+    .hr {
+      border-color: #fff !important;
     }
   }
 }
