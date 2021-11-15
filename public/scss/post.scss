@@ -2,7 +2,7 @@
 @import "utilities";
 
 .main-content {
-  position: relative;
+  // position: relative;
   .post-wrapper {
     // position: absolute;
     margin: 0 auto;
@@ -18,7 +18,7 @@
 
     &__paragraph {
       font-size: 20px;
-      font-family: Georgia, "Times New Roman", Times, serif;
+      font-family: $font-display;
       font-weight: 400;
       color: #292929;
     }
@@ -51,24 +51,40 @@
     }
   }
 }
+.main-post {
+  width: 70% !important;
+  margin: auto !important;
+  // overflow-y: auto;
+  // display: grid !important;
+  // grid-template-columns: 1fr 5fr;
+  display: flex;
+  .side-noti {
+    // position: relative;
+    position: -webkit-sticky;
+    position: sticky;
+    align-self: flex-start;
+    font-size: 13px;
+    font-weight: 400;
+    top: 0;
+    padding: 5rem;
+    margin-top: 8rem;
 
-.side-noti {
-  position: -webkit-sticky;
-  position: sticky;
-  // position: fixed;
-  font-size: 13px;
-  font-weight: 400;
-  top: 0;
-  padding: 5rem;
+    h3 {
+      display: inline-block;
+      font-weight: 650 !important;
+      margin: 1.5rem;
+    }
+  }
 }
 
 .recommended-section {
+  margin: 4rem 0;
   .recommended-post {
     font-size: 14px;
 
     .post-title {
       font-weight: 500;
-      font-family: Helvetica, sans-serif;
+      font-family: $font-display;
       color: #292929;
     }
 
@@ -81,18 +97,17 @@
       width: 70px;
     }
   }
+  h3 {
+    font-weight: 600;
+  }
 }
 
 .bg-custom {
   background: darkcyan;
 }
-.main-post {
-  width: 80% !important;
-  margin: auto !important;
-}
 
 .side-noti {
-  width: 30%;
+  // width: 20%;
   font-size: 1.2rem;
   h2 {
     font-weight: 550;
@@ -131,18 +146,30 @@
   font-size: 1.5rem;
 }
 .follow {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
 }
 
-// .follow-container {
-//   .follow-link{
-//     font-size: 1rem;
-//     padding: 0.8rem 1.8rem !important;
-//   }
-// }
+.follow-container {
+  margin: 2rem 0;
+  .details {
+    font-size: 1.2rem !important;
+    width: 50%;
+    margin: 1rem 2rem;
 
-.recommended-section {
-  h3 {
-    font-weight: 600;
+    .details-content {
+      font-size: 1.2rem;
+      color: #b5b5b5;
+      font-weight: 550;
+    }
+  }
+  .follow-container-img {
+    border-radius: 50%;
+    height: 9rem;
+    border: 1px solid $text-color-link;
+  }
+  .follow-link {
+    font-size: 1rem;
+    padding: 0.8rem 1.8rem !important;
   }
 }

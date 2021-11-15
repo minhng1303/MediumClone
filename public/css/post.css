@@ -17,9 +17,6 @@ body {
   line-height: 1.6;
 }
 
-.main-content {
-  position: relative;
-}
 .main-content .post-wrapper {
   margin: 0 auto;
 }
@@ -32,7 +29,7 @@ body {
 }
 .main-content .post-wrapper__paragraph {
   font-size: 20px;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   color: #292929;
 }
@@ -58,21 +55,36 @@ body {
   cursor: pointer;
 }
 
-.side-noti {
+.main-post {
+  width: 70% !important;
+  margin: auto !important;
+  display: flex;
+}
+.main-post .side-noti {
   position: -webkit-sticky;
   position: sticky;
+  align-self: flex-start;
   font-size: 13px;
   font-weight: 400;
   top: 0;
   padding: 5rem;
+  margin-top: 8rem;
+}
+.main-post .side-noti h3 {
+  display: inline-block;
+  font-weight: 650 !important;
+  margin: 1.5rem;
 }
 
+.recommended-section {
+  margin: 4rem 0;
+}
 .recommended-section .recommended-post {
   font-size: 14px;
 }
 .recommended-section .recommended-post .post-title {
   font-weight: 500;
-  font-family: Helvetica, sans-serif;
+  font-family: "Josefin Sans", sans-serif;
   color: #292929;
 }
 .recommended-section .recommended-post .post-link {
@@ -82,18 +94,15 @@ body {
   height: 70px;
   width: 70px;
 }
+.recommended-section h3 {
+  font-weight: 600;
+}
 
 .bg-custom {
   background: darkcyan;
 }
 
-.main-post {
-  width: 80% !important;
-  margin: auto !important;
-}
-
 .side-noti {
-  width: 30%;
   font-size: 1.2rem;
 }
 .side-noti h2 {
@@ -132,11 +141,31 @@ body {
 }
 
 .follow {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
 }
 
-.recommended-section h3 {
-  font-weight: 600;
+.follow-container {
+  margin: 2rem 0;
+}
+.follow-container .details {
+  font-size: 1.2rem !important;
+  width: 50%;
+  margin: 1rem 2rem;
+}
+.follow-container .details .details-content {
+  font-size: 1.2rem;
+  color: #b5b5b5;
+  font-weight: 550;
+}
+.follow-container .follow-container-img {
+  border-radius: 50%;
+  height: 9rem;
+  border: 1px solid #008480 !important;
+}
+.follow-container .follow-link {
+  font-size: 1rem;
+  padding: 0.8rem 1.8rem !important;
 }
 
 /*# sourceMappingURL=post.css.map */
