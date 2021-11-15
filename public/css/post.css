@@ -1,0 +1,59 @@
+.main-content {
+  position: relative;
+}
+.main-content .post-wrapper {
+  margin: 0 auto;
+}
+.main-content .post-wrapper .post-header {
+  font-size: 12px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+.main-content .post-wrapper .post-header i {
+  font-size: 18px;
+  margin-inline: 2px;
+}
+.main-content .post-wrapper__paragraph {
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  color: #292929;
+}
+.main-content .post-wrapper .post-tag-list .bg-grey {
+  background-color: #e0dcdc;
+  font-size: 13px;
+}
+.main-content .post-wrapper .icons i {
+  font-size: 18px;
+  margin-inline: 2px;
+}
+
+.side-noti {
+  position: -webkit-sticky;
+  position: sticky;
+  font-size: 13px;
+  font-weight: 400;
+  top: 0;
+  padding: 5rem;
+}
+
+.recommended-section .recommended-post {
+  font-size: 14px;
+}
+.recommended-section .recommended-post .post-title {
+  font-weight: 500;
+  font-family: Helvetica, sans-serif;
+  color: #292929;
+}
+.recommended-section .recommended-post .post-link {
+  font-size: 12px;
+}
+.recommended-section .recommended-post img {
+  height: 70px;
+  width: 70px;
+}
+
+.bg-custom {
+  background: darkcyan;
+}
+
+/*# sourceMappingURL=post.css.map */
