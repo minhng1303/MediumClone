@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/tag.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/v4-shims.css"
+    />
+    <title>Feminism</title>
+  </head>
+  <body>
+    <div class="tag">
+      <div class="tag__title">
+        <p class="tag__title__tagged">tagged in</p>
+        <p class="tag__title__feminism">Feminism</p>
+      </div>
+      <div class="tag__container">
+        <div class="tag__container__left">
+          <div class="tag__container__left__title">
+            <img src="../images/feminism.png" alt="feminism" />
+            <p>Fearless she wrote</p>
+          </div>
+          <div class="tag__container__left__intro">
+            <p>
+              This is a space to empower differences, tell our stories, and
+              share our lives together. We will not be silenced. We will be
+              fearless. And we will write.
+            </p>
+          </div>
+          <div class="tag__container__left__link">
+            <a href="#">More information</a>
+          </div>
+          <div class="tag__container__left__social">
+            <p class="tag__container__left__social__title">followers</p>
+            <p class="tag__container__left__social__detail">18.7k</p>
+          </div>
+          <div class="tag__container__left__social">
+            <p class="tag__container__left__social__title">elsewhere</p>
+            <p class="tag__container__left__social__detail">
+              <i class="fas fa-envelope"></i>
+              <i class="fab fa-twitter"></i>
+            </p>
+          </div>
+          <div class="tag__container__left__social">
+            <p class="tag__container__left__social__title">more, on medium</p>
+            <p class="tag__container__left__social__detail__feminism">
+              Feminism
+            </p>
+          </div>
+        </div>
+        <div class="tag__container__right">
+          <div class="tag__container__right__person">
+            <img src="../images/avatar.jpg" alt="avatar" />
+            <div class="tag__container__right__person__info">
+              <div class="tag__container__right__person__title">
+                <span class="tag__container__right__person__title__name" id="person-name"
+                  >Elise LaChapelle</span
+                ><span class="tag__container__right__person__title__in">
+                  in </span
+                ><span class="tag__container__right__person__title__name" id="person-fearless"
+                  >Fearless She Wrote</span
+                >
+              </div>
+              <div class="tag__container__right__person__time">
+                <span>Nov 10 &middot; </span>
+                <span>4 minus read</span>
+                <span><i class="fas fa-star"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="tag__container__right__img">
+            <img src="../images/tag_post.jpeg" alt="tag_post_img" />
+          </div>
+          <div class="tag__container__right__post">
+            <a href="#"
+              ><h2>What Mothers and Childfree Women Have In Common</h2></a
+            >
+          </div>
+          <div class="tag__container__right__post">
+            <a href="#"
+              ><p>
+                Our lives may look different, but we can all relate to ...
+              </p></a
+            >
+          </div>
+          <div class="tag__container__right__post__more">
+            <a href="#"><p>Read more ...</p></a>
+          </div>
+          <div class="tag__container__right__response">
+            <div class="tag__container__right__response__left">
+              <i class="fas fa-hand-holding-heart"></i> 335
+            </div>
+            <div class="tag__container__right__response__right">
+              <span><a href="#">4 responses</a></span>
+              <span class="tag__container__right__response__right__bookmark"
+                ><a href="#"><i class="far fa-bookmark"></i></a></i
+              ><i class="fas fa-bookmark hidden"></i></span>
+            </div>
+          </div>
+          <div id="hover-person" class="tag__container__right__hover-name hidden">
+            <div class="details">
+              <div class="details__wrap">
+                <div class="name"><h2>Elise LaChapelle</h2></div>
+                <div class="member-info">Medium member since Mar 2021</div>
+                <div class="job">Freelance writer, business owner, fitness fanatic, mom of girls.</div>
+              </div>
+              <div class="details__img">
+                <img src="../images/avatar.jpg" alt="avatar">
+              </div>
+            </div>
+            <hr />
+            <div class="follow">
+              <div class="people">Followed by 130 people</div>
+              <div class="follow-link">Follow</div>
+            </div>
+          </div>
+
+          <div id="hover-fearless" class="tag__container__right__hover-name fearless hidden">
+            <div class="details">
+              <div class="details__wrap">
+                <div class="name"><h2>Fearless She Wrote</h2></div>
+                <div class="job">This is a space to empower differences, tell our stories, and share our lives together. We will not be silenced. We will be fearless. And we will write.</div>
+              </div>
+              <div class="details__img">
+                <img src="../images/feminism.png" alt="avatar">
+              </div>
+            </div>
+            <hr />
+            <div class="follow">
+              <div class="people">Followed by 18.7K people</div>
+              <div class="follow-link">Follow</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    const bookmark_regular = document.querySelector('.far.fa-bookmark');
+    const bookmark_solid = document.querySelector('.fas.fa-bookmark');
+    const personName = document.querySelector('#person-name');
+    const hoverPerson = document.querySelector('#hover-person');
+
+    const personFearless = document.querySelector('#person-fearless');
+    const hoverFearless = document.querySelector('#hover-fearless');
+
+    personName.addEventListener('mouseover', () => {
+      hoverPerson.classList.remove('hidden');
+    });
+    personName.addEventListener('mouseout', () => {
+      hoverPerson.classList.add('hidden');
+    });
+
+    personFearless.addEventListener('mouseover', () => {
+      hoverFearless.classList.remove('hidden');
+    });
+
+    personFearless.addEventListener('mouseout', () => {
+      hoverFearless.classList.add('hidden');
+    })
+
+    const toogle_bookmark = () => {
+      bookmark_regular.classList.toggle('hidden');
+      bookmark_solid.classList.toggle('hidden');
+    }
+    bookmark_regular.addEventListener('click', toogle_bookmark);
+    bookmark_solid.addEventListener('click',  toogle_bookmark);
+
+  </script>
+</html>

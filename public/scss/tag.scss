@@ -1,0 +1,254 @@
+@import "base";
+@import "utilities";
+
+.tag {
+  margin-top: 20rem !important;
+  width: 70% !important;
+
+  margin: auto;
+  &__title {
+    &__tagged {
+      // font-size: 1.5rem;
+      // color: rgba(0,0,0,.54);
+      // text-transform: uppercase;
+
+      @include textGrayUppercase();
+      letter-spacing: 2px;
+    }
+    &__feminism {
+      font-size: 2.8rem;
+      color: #292929;
+    }
+  }
+
+  &__container {
+    @include displayFlexCenter();
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 3rem;
+
+    &__left {
+      width: 30%;
+      padding: 1.5rem !important;
+      &__title {
+        @include displayFlexCenter();
+        justify-content: flex-start;
+
+        img {
+          width: 46px;
+          height: 36px;
+        }
+        p {
+          display: inline-block;
+          text-align: center;
+          color: $text-gray-color;
+          font-weight: 540;
+          font-size: 1.4rem;
+          margin-left: 0.5rem;
+          text-transform: capitalize;
+        }
+      }
+      &__intro {
+        margin: 1.5rem 0;
+        color: $text-gray-color;
+        font-size: 1.2rem;
+        word-break: break-word;
+        word-wrap: break-word;
+      }
+      &__link a {
+        color: $text-color-link;
+        text-decoration: none;
+        font-size: 1.2rem;
+        cursor: pointer;
+      }
+      &__social {
+        margin: 1rem 0;
+        &__title {
+          @include textGrayUppercase;
+          display: block;
+        }
+        &__detail {
+          margin-top: 0.5rem;
+          font-size: 1.2rem;
+          color: $text-gray-color;
+          i {
+            display: inline-block;
+            margin-right: 1rem;
+          }
+        }
+        &__detail__feminism {
+          margin-top: 0.5rem;
+          border: 1px solid #eee;
+          padding: 0.5rem;
+          font-size: 1.2rem;
+          color: $text-gray-color;
+          width: 6.5rem;
+          text-align: center;
+        }
+      }
+    }
+    &__right {
+      border: 1px solid #eee;
+      padding: 2rem;
+      &__person {
+
+        display: flex;
+        img {
+          border-radius: 50%;
+          border: 2px solid rgb(155, 204, 154);
+        }
+        &__info {
+          margin: 0 1rem;
+          font-size: 1.2rem;
+        }
+        &__title {
+          color: $text-color-link;
+
+          &__name {
+            color: $text-color-link;
+            cursor: pointer;
+            position: relative;
+
+          }
+          &__in {
+            color: $text-gray-color;
+          }
+        }
+        &__time {
+          color: $text-gray-color;
+          margin: 0.5rem;
+          span i {
+            font-size: 0.8rem;
+            display: inline-block;
+            margin-top: -1rem !important;
+            padding-top: 0;
+          }
+        }
+      }
+      &__img {
+        margin: 1rem 0;
+        img {
+          width: 600px;
+        }
+      }
+      &__post {
+        width: 80%;
+        a {
+          text-decoration: none;
+          cursor: pointer;
+        }
+        h2 {
+          color: #000;
+          font-size: 2.2rem;
+          text-transform: capitalize;
+        }
+        p {
+          font-size: 2rem;
+          color: $text-gray-color;
+          //   clear: both;
+          //   display: inline-block;
+          //   overflow: hidden;
+          //   white-space: nowrap;
+          //   text-overflow: ellipsis;
+        }
+        &__more a {
+          text-decoration: none;
+        }
+        &__more p {
+          font-size: 1.5rem;
+          color: $text-gray-color;
+        }
+      }
+      &__response {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 1rem 0;
+        font-size: 1.5rem;
+        color: $text-gray-color;
+
+        &__left {
+          i {
+            color: $text-color-link;
+          }
+        }
+        &__right {
+          margin-left: auto;
+          a {
+            text-decoration: none;
+            color: $text-gray-color;
+          }
+          i {
+            cursor: pointer;
+            margin: 0.5rem;
+          }
+        }
+      }
+      &__hover-name {
+        background-color: #fff;
+        width: 30rem;
+        position: absolute;
+        margin-top: -62rem;
+        z-index: 999;
+        padding: 1rem;
+        border-radius: 10px;
+
+        
+
+        .details {
+          display: flex;
+          margin: 1rem 0;
+          &__img img {
+            display: inline-block;
+            border-radius: 50%;
+            border: 2px solid rgb(155, 204, 154);
+          }
+        }
+
+        border: 1px solid #ddd;
+        .name {
+          font-size: 1.5rem;
+        }
+        .member-info {
+          font-size: 1.3rem;
+          color: #1a8917;
+          font-weight: 540;
+        }
+        .job {
+          font-size: 1.3rem;
+          color: $text-gray-color;
+        }
+        .follow {
+          display: flex;
+          margin-top: 1rem;
+          align-items: center;
+          font-size: 1.3rem;
+          color: $text-gray-color;
+        }
+        .follow-link {
+          margin-left: auto;
+          border: 1px solid $text-color-link;
+          padding: 0.5rem 1.5rem;
+          border-radius: 30px;
+          color: $text-color-link;
+          cursor: pointer;
+        }
+      }
+     
+    }
+  }
+}
+
+.fearless{
+    position: absolute;
+    margin-top: -65rem;
+    margin-left: 10rem;
+    img{
+        border-radius: 0 !important;
+        border: 1px solid #fff !important;
+    }
+}
+
+.hidden {
+  display: none !important;
+}

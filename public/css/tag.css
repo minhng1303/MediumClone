@@ -1,0 +1,258 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.tag {
+  margin-top: 20rem !important;
+  width: 70% !important;
+  margin: auto;
+}
+.tag__title__tagged {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #525252;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+.tag__title__feminism {
+  font-size: 2.8rem;
+  color: #292929;
+}
+.tag__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 3rem;
+}
+.tag__container__left {
+  width: 30%;
+  padding: 1.5rem !important;
+}
+.tag__container__left__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+}
+.tag__container__left__title img {
+  width: 46px;
+  height: 36px;
+}
+.tag__container__left__title p {
+  display: inline-block;
+  text-align: center;
+  color: #525252;
+  font-weight: 540;
+  font-size: 1.4rem;
+  margin-left: 0.5rem;
+  text-transform: capitalize;
+}
+.tag__container__left__intro {
+  margin: 1.5rem 0;
+  color: #525252;
+  font-size: 1.2rem;
+  word-break: break-word;
+  word-wrap: break-word;
+}
+.tag__container__left__link a {
+  color: #008480 !important;
+  text-decoration: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.tag__container__left__social {
+  margin: 1rem 0;
+}
+.tag__container__left__social__title {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #525252;
+  font-size: 1.2rem;
+  display: block;
+}
+.tag__container__left__social__detail {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  color: #525252;
+}
+.tag__container__left__social__detail i {
+  display: inline-block;
+  margin-right: 1rem;
+}
+.tag__container__left__social__detail__feminism {
+  margin-top: 0.5rem;
+  border: 1px solid #eee;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  color: #525252;
+  width: 6.5rem;
+  text-align: center;
+}
+.tag__container__right {
+  border: 1px solid #eee;
+  padding: 2rem;
+}
+.tag__container__right__person {
+  display: flex;
+}
+.tag__container__right__person img {
+  border-radius: 50%;
+  border: 2px solid #9bcc9a;
+}
+.tag__container__right__person__info {
+  margin: 0 1rem;
+  font-size: 1.2rem;
+}
+.tag__container__right__person__title {
+  color: #008480 !important;
+}
+.tag__container__right__person__title__name {
+  color: #008480 !important;
+  cursor: pointer;
+  position: relative;
+}
+.tag__container__right__person__title__in {
+  color: #525252;
+}
+.tag__container__right__person__time {
+  color: #525252;
+  margin: 0.5rem;
+}
+.tag__container__right__person__time span i {
+  font-size: 0.8rem;
+  display: inline-block;
+  margin-top: -1rem !important;
+  padding-top: 0;
+}
+.tag__container__right__img {
+  margin: 1rem 0;
+}
+.tag__container__right__img img {
+  width: 600px;
+}
+.tag__container__right__post {
+  width: 80%;
+}
+.tag__container__right__post a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.tag__container__right__post h2 {
+  color: #000;
+  font-size: 2.2rem;
+  text-transform: capitalize;
+}
+.tag__container__right__post p {
+  font-size: 2rem;
+  color: #525252;
+}
+.tag__container__right__post__more a {
+  text-decoration: none;
+}
+.tag__container__right__post__more p {
+  font-size: 1.5rem;
+  color: #525252;
+}
+.tag__container__right__response {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  color: #525252;
+}
+.tag__container__right__response__left i {
+  color: #008480 !important;
+}
+.tag__container__right__response__right {
+  margin-left: auto;
+}
+.tag__container__right__response__right a {
+  text-decoration: none;
+  color: #525252;
+}
+.tag__container__right__response__right i {
+  cursor: pointer;
+  margin: 0.5rem;
+}
+.tag__container__right__hover-name {
+  background-color: #fff;
+  width: 30rem;
+  position: absolute;
+  margin-top: -62rem;
+  z-index: 999;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+.tag__container__right__hover-name .details {
+  display: flex;
+  margin: 1rem 0;
+}
+.tag__container__right__hover-name .details__img img {
+  display: inline-block;
+  border-radius: 50%;
+  border: 2px solid #9bcc9a;
+}
+.tag__container__right__hover-name .name {
+  font-size: 1.5rem;
+}
+.tag__container__right__hover-name .member-info {
+  font-size: 1.3rem;
+  color: #1a8917;
+  font-weight: 540;
+}
+.tag__container__right__hover-name .job {
+  font-size: 1.3rem;
+  color: #525252;
+}
+.tag__container__right__hover-name .follow {
+  display: flex;
+  margin-top: 1rem;
+  align-items: center;
+  font-size: 1.3rem;
+  color: #525252;
+}
+.tag__container__right__hover-name .follow-link {
+  margin-left: auto;
+  border: 1px solid #008480 !important;
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px;
+  color: #008480 !important;
+  cursor: pointer;
+}
+
+.fearless {
+  position: absolute;
+  margin-top: -65rem;
+  margin-left: 10rem;
+}
+.fearless img {
+  border-radius: 0 !important;
+  border: 1px solid #fff !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/*# sourceMappingURL=tag.css.map */
