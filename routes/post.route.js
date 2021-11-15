@@ -8,13 +8,20 @@ router.get("/api/post", async (req, res, next) => {
 });
 
 router.post("/api/post", async (req, res, next) => {
-  const { title, author, content } = req.body;
   //   const post = new Post({
   //     title: "Hello World",
   //     author: "Tien MInh",
   //     content: "This is test content",
   //     imageUrl: `https://miro.medium.com/max/612/1*ZFyrLwqPUrXQD4-Ie4Y15A.jpeg`,
   //   });
+  const { title, author, content } = req.body;
+  const { filePath } = req.file;
+  const post = new Post({
+    title: title,
+    author: author,
+    content: content,
+    imageUrl: filePath,
+  });
   post.save((error) => {
     if (error) {
       return res.status(500).json({ message: "Sorry, internal server error" });
