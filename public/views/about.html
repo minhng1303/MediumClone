@@ -84,6 +84,24 @@
             <img src="../images/about_editor.jpeg" alt="Editor" />
           </div>
           <div class="about__editors__profile__intro">
+            <h6 class="about__editors__profile__intro__name hover">Gillian Sisley</h6>
+            <div class="about__editors__profile__intro__detail">
+              Online solopreneur. Tea drinker. Committed optimist. I write about
+              womanhood, writing & entrepreneurship. Never miss a single beat
+              <i class="fas fa-hand-point-right">&nbsp;</i>&nbsp;<a
+                href="https://bit.ly/33XgtKT"
+                >https://bit.ly/33XgtKT</a
+              >
+            </div>
+          </div>
+          <div class="about__editors__profile__intro__follow">Follow</div>
+        </div>
+
+        <!-- <div class="about__editors__profile">
+          <div class="about__editors__profile__img">
+            <img src="../images/about_editor.jpeg" alt="Editor" />
+          </div>
+          <div class="about__editors__profile__intro">
             <h6 class="about__editors__profile__intro__name">Gillian Sisley</h6>
             <div class="about__editors__profile__intro__detail">
               Online solopreneur. Tea drinker. Committed optimist. I write about
@@ -114,6 +132,54 @@
           </div>
           <div class="about__editors__profile__intro__follow">Follow</div>
         </div>
+
+        <div class="about__editors__profile">
+          <div class="about__editors__profile__img hover">
+            <img src="../images/about_editor.jpeg" alt="Editor" />
+          </div>
+          <div class="about__editors__profile__intro">
+            <h6 class="about__editors__profile__intro__name">Gillian Sisley</h6>
+            <div class="about__editors__profile__intro__detail">
+              Online solopreneur. Tea drinker. Committed optimist. I write about
+              womanhood, writing & entrepreneurship. Never miss a single beat
+              <i class="fas fa-hand-point-right">&nbsp;</i>&nbsp;<a
+                href="https://bit.ly/33XgtKT"
+                >https://bit.ly/33XgtKT</a
+              >
+            </div>
+          </div>
+          <div class="about__editors__profile__intro__follow">Follow</div>
+        </div> -->
+
+        <div class="about__editors__hover hidden" id="editor-hover">
+          <div class="about__editors__hover__profile">
+            <div class="about__editors__hover__profile__left">
+              <h4 class="about__editors__hover__profile__name">
+                Gillian Sisley
+              </h4>
+              <p class="about__editors__hover__profile__member">
+                Medium member since Sep 2018
+              </p>
+              <p class="about__editors__hover__profile__intro">
+                Online solopreneur. Tea drinker. Committed optimist. I write
+                about womanhood, writing & entrepreneurship. Never miss a single
+                beat 👉
+                <a href="https://bit.ly/33XgtKT">https://bit.ly/33XgtKT</a>
+              </p>
+            </div>
+            <div class="about__editors__hover__profile__img">
+              <img src="../images/about_editor.jpeg" alt="editor" />
+            </div>
+          </div>
+
+          <hr />
+          <div class="about__editors__hover__follow">
+            <div class="about__editors__hover__follow__people">
+              Followed by 40K people
+            </div>
+            <div class="about__editors__hover__follow__link">Follow</div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
@@ -132,5 +198,14 @@
         navbar.classList.remove("sticky");
       }
     }
+
+    const editor_hover = document.querySelector('#editor-hover');
+    const hover_name = document.querySelector('.hover');
+    hover_name.addEventListener('mouseover', () => {
+      editor_hover.classList.remove('hidden');
+    });
+    hover_name.addEventListener('mouseout', () => {
+      editor_hover.classList.add('hidden');
+    })
   </script>
 </html>

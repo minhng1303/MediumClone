@@ -93,6 +93,7 @@ body {
   width: 60px;
 }
 .about__editors__profile__intro__name {
+  position: relative;
   color: #008480 !important;
   font-size: 1.4rem;
   font-weight: 500;
@@ -118,6 +119,62 @@ body {
   padding: 0.5rem 1rem;
   border: 1px solid #008480 !important;
   border-radius: 20px;
+}
+.about__editors__hover {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  width: 30rem;
+  position: absolute !important;
+  margin-top: -40rem;
+  z-index: 999;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.about__editors__hover__profile {
+  display: flex;
+  align-items: flex-start;
+  margin: 2rem 0;
+}
+.about__editors__hover__profile__name {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+.about__editors__hover__profile__member {
+  color: #228d1f;
+  font-size: 1.2rem;
+}
+.about__editors__hover__profile__intro {
+  font-size: 1.2rem;
+  color: #525252;
+}
+.about__editors__hover__profile__intro a {
+  text-decoration: none;
+  color: #525252;
+}
+.about__editors__hover__profile img {
+  width: 70px;
+  border-radius: 50%;
+  border: 1px solid #228d1f;
+}
+.about__editors__hover__follow {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+}
+.about__editors__hover__follow__people {
+  color: #525252;
+}
+.about__editors__hover__follow__link {
+  margin-left: auto;
+  color: #008480 !important;
+  padding: 0.5rem 1rem;
+  border: 1px solid #008480 !important;
+  border-radius: 20px;
+}
+
+.hidden {
+  display: none;
 }
 
 /*# sourceMappingURL=about.css.map */

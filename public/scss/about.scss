@@ -69,7 +69,7 @@
       margin: 1rem 0;
     }
     &__profile {
-        margin: 2rem 0;
+      margin: 2rem 0;
       display: flex;
       align-items: flex-start;
       &__img {
@@ -82,6 +82,7 @@
       }
       &__intro {
         &__name {
+          position: relative;
           color: $text-color-link;
           font-size: 1.4rem;
           font-weight: 500;
@@ -110,5 +111,64 @@
         }
       }
     }
+
+    &__hover {
+        border: 1px solid #ccc;
+      background-color: #fff;
+      width: 30rem;
+      position: absolute !important;
+      margin-top: -40rem;
+      z-index: 999;
+      padding: 1rem;
+      border-radius: 10px;
+
+      &__profile {
+        display: flex;
+        align-items: flex-start;
+        margin: 2rem 0;
+        &__name {
+          font-size: 1.5rem;
+          line-height: 2.5rem;
+        }
+        &__member {
+          color: $color-border-green;
+          font-size: 1.2rem;
+        }
+        &__intro {
+          font-size: 1.2rem;
+          color: $text-gray-color;
+          a {
+            text-decoration: none;
+            color: $text-gray-color;
+          }
+        }
+        img {
+          width: 70px;
+          border-radius: 50%;
+          border: 1px solid $color-border-green;
+        }
+      }
+      &__follow {
+        margin: 1rem 0;
+        font-size: 1.2rem;
+
+        display: flex;
+        align-items: center;
+        &__people {
+          color: $text-gray-color;
+        }
+        &__link{
+            margin-left: auto;
+            color: $text-color-link;
+            padding: 0.5rem 1rem;
+            border: 1px solid $text-color-link;
+            border-radius: 20px;
+        }
+      }
+    }
   }
+}
+
+.hidden{
+    display: none;
 }
