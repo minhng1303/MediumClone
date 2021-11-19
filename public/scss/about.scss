@@ -1,0 +1,114 @@
+@import "base";
+@import "utilities";
+
+.sticky {
+  // position: fixed !important;
+  // position: sticky;
+  // top: 0;
+  // z-index: 100;
+
+  position: fixed;
+  top: 0;
+}
+.about {
+  width: 70%;
+  margin: auto;
+
+  &__intro {
+    display: flex;
+
+    &__img {
+      margin-right: 1rem;
+    }
+    &__content {
+      margin-bottom: 3rem;
+      width: 70%;
+      &__title {
+        text-transform: uppercase;
+        color: $text-gray-color;
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 2rem;
+      }
+      &__subtitle {
+        color: $header-text-color;
+        font-size: 1.2rem;
+        line-height: 2rem;
+        font-weight: 600;
+      }
+      &__detail {
+        color: $text-gray-color;
+        font-size: 1.3rem;
+        font-weight: 200;
+      }
+    }
+  }
+
+  &__note {
+    margin-bottom: 3rem;
+    &__title {
+      text-transform: uppercase;
+      color: $text-gray-color;
+      margin: 1.5rem 0;
+      font-weight: 530;
+      letter-spacing: 2px;
+    }
+    &__detail {
+      font-size: 1.8rem;
+      font-weight: 400;
+      color: rgba(0, 0, 0, 0.84);
+    }
+  }
+  &__editors {
+    margin: 2rem 0;
+    &__title {
+      display: inline-block;
+      text-transform: uppercase;
+      color: $text-gray-color;
+      font-weight: 500;
+      margin: 1rem 0;
+    }
+    &__profile {
+        margin: 2rem 0;
+      display: flex;
+      align-items: flex-start;
+      &__img {
+        margin-right: 1rem;
+        img {
+          border-radius: 50%;
+          border: 1px solid $text-color-link;
+          width: 60px;
+        }
+      }
+      &__intro {
+        &__name {
+          color: $text-color-link;
+          font-size: 1.4rem;
+          font-weight: 500;
+        }
+        &__detail {
+          color: $text-gray-color;
+          font-size: 1.3rem;
+          font-weight: 200;
+          width: 70%;
+          i {
+            color: #d78718;
+          }
+          a {
+            text-decoration: none;
+            color: $text-gray-color;
+            cursor: pointer;
+          }
+        }
+        &__follow {
+          display: inline-block;
+          font-size: 1.2rem;
+          color: $text-color-link;
+          padding: 0.5rem 1rem;
+          border: 1px solid $text-color-link;
+          border-radius: 20px;
+        }
+      }
+    }
+  }
+}

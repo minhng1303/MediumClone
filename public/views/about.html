@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/about.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <title>About</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="items">
+        <div class="left-items">
+          <a href="index.html">
+            <img src="../images/medium-icon.png" alt="Medium" />
+          </a>
+        </div>
+        <div class="right-items">
+          <div class="signin">
+            <a href="#">Sign in</a>
+          </div>
+          <div class="get-started">Get started</div>
+        </div>
+      </div>
+      <hr />
+      <div class="nav">
+        <div class="nav__content">
+          <div class="nav__content__img">
+            <img src="../images/feminism.png" />
+          </div>
+          <div class="nav__content__items">
+            <a href="#" class="nav__content__items__link">feminism</a>
+            <a href="#" class="nav__content__items__link">culture</a>
+            <a href="#" class="nav__content__items__link">relationships</a>
+            <a href="#" class="nav__content__items__link">sexuality</a>
+            <a href="#" class="nav__content__items__link">women</a>
+            <a href="#" class="nav__content__items__link">write for us</a>
+            <a href="#" class="nav__content__items__link"
+              >submission guidelines</a
+            >
+            <a href="#" class="nav__content__items__link">&#124;</a>
+            <a href="#" class="nav__content__items__link">patreon</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="about">
+      <div class="about__intro">
+        <div class="about__intro__img">
+          <img src="../images/feminism.png" alt="feminism" />
+        </div>
+        <div class="about__intro__content">
+          <h6 class="about__intro__content__title">about</h6>
+          <div class="about__intro__content__subtitle">Fearless She Wrote</div>
+          <p class="about__intro__content__detail">
+            This is a space to empower differences, tell our stories, and share
+            our lives together. We will not be silenced. We will be fearless.
+            And we will write.
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div class="about__note">
+        <h3 class="about__note__title">note from the editor</h3>
+        <p class="about__note__detail">
+          This is a space to empower differences, tell our stories, and share
+          our lives together. We will not be silenced. We will be fearless. And
+          we will write.
+        </p>
+      </div>
+      <hr />
+
+      <div class="about__editors">
+        <h2 class="about__editors__title">editors</h2>
+        <div class="about__editors__profile">
+          <div class="about__editors__profile__img">
+            <img src="../images/about_editor.jpeg" alt="Editor" />
+          </div>
+          <div class="about__editors__profile__intro">
+            <h6 class="about__editors__profile__intro__name">Gillian Sisley</h6>
+            <div class="about__editors__profile__intro__detail">
+              Online solopreneur. Tea drinker. Committed optimist. I write about
+              womanhood, writing & entrepreneurship. Never miss a single beat
+              <i class="fas fa-hand-point-right">&nbsp;</i>&nbsp;<a
+                href="https://bit.ly/33XgtKT"
+                >https://bit.ly/33XgtKT</a
+              >
+            </div>
+          </div>
+          <div class="about__editors__profile__intro__follow">Follow</div>
+        </div>
+
+        <div class="about__editors__profile">
+          <div class="about__editors__profile__img">
+            <img src="../images/about_editor.jpeg" alt="Editor" />
+          </div>
+          <div class="about__editors__profile__intro">
+            <h6 class="about__editors__profile__intro__name">Gillian Sisley</h6>
+            <div class="about__editors__profile__intro__detail">
+              Online solopreneur. Tea drinker. Committed optimist. I write about
+              womanhood, writing & entrepreneurship. Never miss a single beat
+              <i class="fas fa-hand-point-right">&nbsp;</i>&nbsp;<a
+                href="https://bit.ly/33XgtKT"
+                >https://bit.ly/33XgtKT</a
+              >
+            </div>
+          </div>
+          <div class="about__editors__profile__intro__follow">Follow</div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    window.onscroll = function () {
+      myFunction();
+    };
+
+    var navbar = document.querySelector(".nav");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky");
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+</html>

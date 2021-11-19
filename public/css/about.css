@@ -1,0 +1,123 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+.about {
+  width: 70%;
+  margin: auto;
+}
+.about__intro {
+  display: flex;
+}
+.about__intro__img {
+  margin-right: 1rem;
+}
+.about__intro__content {
+  margin-bottom: 3rem;
+  width: 70%;
+}
+.about__intro__content__title {
+  text-transform: uppercase;
+  color: #525252;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+.about__intro__content__subtitle {
+  color: #008480;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  font-weight: 600;
+}
+.about__intro__content__detail {
+  color: #525252;
+  font-size: 1.3rem;
+  font-weight: 200;
+}
+.about__note {
+  margin-bottom: 3rem;
+}
+.about__note__title {
+  text-transform: uppercase;
+  color: #525252;
+  margin: 1.5rem 0;
+  font-weight: 530;
+  letter-spacing: 2px;
+}
+.about__note__detail {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.84);
+}
+.about__editors {
+  margin: 2rem 0;
+}
+.about__editors__title {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #525252;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+.about__editors__profile {
+  margin: 2rem 0;
+  display: flex;
+  align-items: flex-start;
+}
+.about__editors__profile__img {
+  margin-right: 1rem;
+}
+.about__editors__profile__img img {
+  border-radius: 50%;
+  border: 1px solid #008480 !important;
+  width: 60px;
+}
+.about__editors__profile__intro__name {
+  color: #008480 !important;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.about__editors__profile__intro__detail {
+  color: #525252;
+  font-size: 1.3rem;
+  font-weight: 200;
+  width: 70%;
+}
+.about__editors__profile__intro__detail i {
+  color: #d78718;
+}
+.about__editors__profile__intro__detail a {
+  text-decoration: none;
+  color: #525252;
+  cursor: pointer;
+}
+.about__editors__profile__intro__follow {
+  display: inline-block;
+  font-size: 1.2rem;
+  color: #008480 !important;
+  padding: 0.5rem 1rem;
+  border: 1px solid #008480 !important;
+  border-radius: 20px;
+}
+
+/*# sourceMappingURL=about.css.map */
