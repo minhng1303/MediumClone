@@ -9,7 +9,7 @@ router.get("/api/post", async (req, res, next) => {
 
 router.post("/api/post", async (req, res, next) => {
   const { title, author, content } = req.body;
-  console.log(req.file.path)
+  console.log(req.file.filename)
   // console.log(req)
   const imageUrl = `localhost:3000/uploads/${req.file.filename}`;
 
