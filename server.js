@@ -12,7 +12,7 @@ const storage = multer.diskStorage({
     callback(null, "./public/uploads");
   },
   filename: (req, file, callback) => {
-    callback(null, Date.now() + path.extname(file.originalname));
+    callback(null, Date.now().toString() + file.originalname);
   },
 });
 
@@ -29,10 +29,8 @@ app.use((req, res, next) => {
 
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
 app.use(multer({ storage: storage }).single("image"));
-
-
+app.use(express.urlencoded({ extended: true }));
 
 mongooose
   .connect(URL, { useNewUrlParser: true, useUnifiedTopology: true })
