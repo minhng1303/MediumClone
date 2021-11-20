@@ -1,6 +1,7 @@
 const express = require("express");
 const mongooose = require("mongoose");
 const postRoute = require("./routes/post.route");
+const tagRoute = require("./routes/tag.route");
 require("dotenv/config");
 const app = express();
 const URL = process.env.URL;
@@ -41,3 +42,4 @@ mongooose
   });
 
 app.use(postRoute);
+app.use(tagRoute);
