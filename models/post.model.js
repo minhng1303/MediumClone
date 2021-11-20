@@ -7,10 +7,12 @@ const postSchema = new Schema(
     author: { type: String, required: true },
     content: { type: String, required: true },
     imageUrl: String,
-    tags: {
-      type: Schema.Types.ObjectId,
-      ref: "Tag",
-    },
+    tags: [
+      {
+        type: Schema.Types.ObjectId,
+        ref: "Tag",
+      },
+    ],
   },
   {
     timestamps: true,

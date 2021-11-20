@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <title>Add post</title>
+  <link rel="stylesheet" href="../css/add-post.css" />
+  <script src="./scripts/add-post.js" defer></script>
+</head>
+
+<body>
+  <div class="post-form">
+    <div class="title">
+      <h3>Add a post</h3>
+    </div>
+    <br />
+    <form method="post" enctype="multipart/form-data">
+      <label>Title</label>
+      <input type="text" name="title" id="title" placeholder="Enter title" value="" /><br />
+      <label>Author</label>
+      <input type="text" name="author" id="author" placeholder="Enter author name" value="" /><br />
+      <label>Content</label>
+      <input type="text" name="content" id="content" placeholder="Enter post content" value="" /><br />
+      <label>Choose an image</label>
+      <input type="file" name="image" id="image" /><br />
+      <div class=" btn-submit">
+        <input type="submit" />
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
