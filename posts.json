@@ -1,0 +1,61 @@
+[{
+  "_id": {
+    "$oid": "61921f004b13336ca9e2994a"
+  },
+  "title": "Hello World",
+  "author": "Tien MInh",
+  "content": "This is test content",
+  "imageUrl": "https://miro.medium.com/max/612/1*ZFyrLwqPUrXQD4-Ie4Y15A.jpeg",
+  "createdAt": {
+    "$date": "2021-11-15T08:49:04.435Z"
+  },
+  "updatedAt": {
+    "$date": "2021-11-15T08:49:04.435Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6197d7a05067e8c80d41d42c"
+  },
+  "title": "test title 1",
+  "author": "Tien Minh 1",
+  "content": "this is the test content 1",
+  "createdAt": {
+    "$date": "2021-11-19T16:58:08.201Z"
+  },
+  "updatedAt": {
+    "$date": "2021-11-19T16:58:08.201Z"
+  },
+  "__v": 0,
+  "imageUrl": "http://localhost:3000/uploads/java.jpg"
+},{
+  "_id": {
+    "$oid": "6197d7aa5067e8c80d41d42e"
+  },
+  "title": "test title 2",
+  "author": "Tien Minh 2",
+  "content": "this is the test content 2",
+  "createdAt": {
+    "$date": "2021-11-19T16:58:18.166Z"
+  },
+  "updatedAt": {
+    "$date": "2021-11-19T16:58:18.166Z"
+  },
+  "__v": 0,
+  "imageUrl": "http://localhost:3000/uploads/java2.jpg"
+},{
+  "_id": {
+    "$oid": "6197d7ae5067e8c80d41d430"
+  },
+  "title": "test title 3",
+  "author": "Tien Minh 3",
+  "content": "this is the test content 3",
+  "createdAt": {
+    "$date": "2021-11-19T16:58:22.499Z"
+  },
+  "updatedAt": {
+    "$date": "2021-11-19T16:58:22.499Z"
+  },
+  "__v": 0,
+  "imageUrl": "http://localhost:3000/uploads/java3.jpg"
+}]
