@@ -3,18 +3,18 @@ const router = express.Router();
 const Post = require("../models/post.model");
 
 router.get("/api/post", async (req, res, next) => {
-  let postList = await Post.find({}).limit(5);
+  let postList = await Post.find({}).limit(3);
   res.json({ posts: postList });
 });
 
 router.post("/api/post", async (req, res, next) => {
   const { title, author, content } = req.body;
-  const { filePath } = req.file;
+  const imageUrl = `localhost:3000/uploads/${req.file.filename}`;
   const post = new Post({
     title: title,
     author: author,
     content: content,
-    imageUrl: filePath,
+    imageUrl: imageUrl,
   });
   post.save((error) => {
     if (error) {
