@@ -9,12 +9,18 @@ router.get("/api/post", async (req, res, next) => {
 
 router.post("/api/post", async (req, res, next) => {
   const { title, author, content } = req.body;
+  console.log(req.file.path)
+  // console.log(req)
   const imageUrl = `localhost:3000/uploads/${req.file.filename}`;
+
+  if(!title || !author || !content){
+    return res.status(400).send('Title, author and content are required!');
+  }
   const post = new Post({
     title: title,
     author: author,
     content: content,
-    imageUrl: imageUrl,
+    // imageUrl: imageUrl,
   });
   post.save((error) => {
     if (error) {

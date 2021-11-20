@@ -1,0 +1,41 @@
+@import "base";
+@import "utilities";
+
+.post-form{
+    padding: 3rem;
+    width: 60%;
+    margin: auto;
+    margin-top: 2rem;
+    background-color: #eee;
+   
+    .title{
+        text-align: center;
+        color: $text-color-link;
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    label{
+        font-size: 1.5rem;
+        color: $text-gray-color;
+        margin-right: 1rem;
+        margin-top: 2rem;
+    }
+    input{
+        padding: 1rem;
+        width: 100%;
+        font-size: 1.2rem;
+    }
+    input[name="content"]{
+        height: 8rem;
+    }
+    .btn-submit{
+        width: 30%;
+        margin: auto;
+        input[type="submit"]{
+            display: inline-block !important;
+            margin-top: 2rem;
+            background-color: $color-border-green;
+            
+        }
+    }
+}

@@ -36,6 +36,10 @@
         margin-inline: 2px;
       }
     }
+    &__paragraph{
+      font-size: 1.5rem;
+      color: $text-gray-color;
+    }
   }
   .intro {
     font-size: 1.3rem;

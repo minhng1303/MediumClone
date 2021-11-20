@@ -41,6 +41,10 @@ body {
   font-size: 18px;
   margin-inline: 2px;
 }
+.main-content .post-wrapper__paragraph {
+  font-size: 1.5rem;
+  color: #525252;
+}
 .main-content .intro {
   font-size: 1.3rem;
   padding: 1.2rem;
