@@ -9,8 +9,7 @@ const postSchema = new Schema(
     imageUrl: String,
     tags: [
       {
-        type: Schema.Types.ObjectId,
-        ref: "Tag",
+        type: String,
       },
     ],
   },

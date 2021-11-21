@@ -34,4 +34,13 @@ router.post("/api/post", async (req, res, next) => {
   });
 });
 
+router.get("/api/post/:tagName", async (req, res, next) => {
+  const tagName = req.params.tagName;
+  let postList = await Post.find({
+    tags: {
+      $in: [tagName],
+    },
+  }).limit(3);
+  res.status(200).json({ posts: postList, tagName: tagName });
+});
 module.exports = router;
