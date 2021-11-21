@@ -2,7 +2,7 @@ const form = document.querySelector("form");
 
 form.addEventListener("submit", onSubmit);
 
-async function onSubmit() {
+async function onSubmit(event) {
   event.preventDefault();
   console.log("hello");
   const inputTitle = document.querySelector("input#title");
@@ -17,6 +17,8 @@ async function onSubmit() {
   const inputImage = document.querySelector("input#image");
   const inputImageValue = inputImage.files[0];
 
+  console.log(inputImage.files);
+
   const formData = new FormData();
   formData.append("title", inputTitleValue);
   formData.append("author", inputAuthorValue);
@@ -25,7 +27,8 @@ async function onSubmit() {
   const response = await fetch("http://localhost:3000/api/post", {
     method: "POST",
     body: formData,
-  }).then((res) => {
-    console.log(res);
   });
+  console.log(response);
+  window.location.replace('/post.html');
+  // document.replace('post.html')
 }

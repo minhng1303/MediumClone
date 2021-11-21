@@ -1,23 +1,18 @@
-const express = require("express");
+const express = require('express');
+const { check } = require('express-validator');
+
 const router = express.Router();
 
-const Author = require('../models/author.model');
+const authorControllers = require('../controllers/author-controllers');
 
-router.get('/api/author', async(req, res, next) => {
-    let authorList;
-    try{
-        authorList = await Author.find({});
-        res.json({ authors: authorList });
-    }catch(error){
-        throw new Error('Not find any author!')
-    }
 
-    res.json({ authors: authorList });
-});
+router.get('/api/authors', authorControllers.getAuthors);
+router.post('/api/author',
+[
+  check('name').not().isEmpty(),
+  check('short_intro').not().isEmpty()
 
-router.post('/api/author', async(req, res, next) => {
-    
-}
-)
+],
+authorControllers.createAuthor);
 
 module.exports = router;

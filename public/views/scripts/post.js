@@ -3,10 +3,15 @@ const post_wrapper_content = document.querySelector(".post-wrapper-content");
 async function getPosts() {
   const response = await fetch("http://localhost:3000/api/post");
   const posts = await response.json();
-  const post = posts.posts[0];
-  console.log(posts.posts[0]);
+  // console.log(posts.posts.length);
+  // const post = posts.posts[0];
+  // console.log(posts.posts[0]);
 
-  const post_content = `
+  for (let i=0; i<posts.posts.length; i++) {
+    console.log(posts.posts.length);
+    let post = posts.posts[i];
+    console.log(post); 
+    const post_content = `
   <h2>${post.title}</h2>
 
           <span class="text-secondary font-weight-bold"
@@ -25,7 +30,7 @@ async function getPosts() {
           >Follow</span
         >
       </span>
-      <span class="time">Nov 10 . 4 min read</span>
+      <span class="time">${(new Date(post.createdAt)).toDateString()} . 4 min read</span>
       <span><i class="fas fa-star fa-xs"></i></span>
     </span>
     <span class="ml-auto align-self-end">
@@ -40,17 +45,16 @@ async function getPosts() {
   <div class="mx-auto post-container">
             <img
               class="w-100 mt-4"
-              src="https://miro.medium.com/max/700/1*1FO9_wdMf9DHdEDTG9vifw.jpeg"
+              src=${post.imageUrl}
               alt="family"
             />
             <span class="d-block text-center mt-3 photo-by"
               >Photo by <u>Vlada Karpovich</u> from Pexels
             </span>
           </div>
-          <p class="post-wrapper__paragraph mt-3">${post.content}</p>`
-  ;
-
-  post_wrapper_content.innerHTML += post_content;
+          <p class="post-wrapper__paragraph mt-3">${post.content}</p>`;
+    post_wrapper_content.innerHTML += post_content;
+  }
 }
 
 getPosts();
