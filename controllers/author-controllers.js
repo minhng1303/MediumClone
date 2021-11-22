@@ -32,7 +32,12 @@ const createAuthor = async (req, res, next) => {
       new HttpError("Invalid input passed, please check your data.", 422)
     );
   }
-  const { name, avatar, short_intro } = req.body;
+  const { name, short_intro } = req.body;
+  const avatar = "https://cdn.pixabay.com/photo/2013/07/13/12/07/avatar-159236_960_720.png";
+  // const avatar = req.file.filename
+  //   ? `localhost:3000/uploads/${req.file.filename}`
+  //   : "";
+  //   console.log(avatar);
   let existingAuthor;
   try {
     existingAuthor = await Author.findOne({ name: name });
@@ -59,14 +64,12 @@ const createAuthor = async (req, res, next) => {
     return next(error);
   }
 
-  res
-    .status(201)
-    .json({
-      name: newAuthor.name,
-      short_intro: newAuthor.short_intro,
-      avatar: newAuthor.avatar,
-      posts: newAuthor.posts,
-    });
+  res.status(201).json({
+    name: newAuthor.name,
+    short_intro: newAuthor.short_intro,
+    avatar: newAuthor.avatar,
+    posts: newAuthor.posts,
+  });
 };
 
 exports.getAuthors = getAuthors;
